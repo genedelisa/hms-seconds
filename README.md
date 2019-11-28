@@ -38,7 +38,9 @@
 
 A command line app that will compute seconds from an input string in H:M:S format.
 
-This use the Swift Package Manager to pull in swift-tools-support-core for the argument parsing.
+This simple app uses the Swift Package Manager to pull in swift-tools-support-core for the argument parsing.
+
+That's the real point: a command line app that uses 3rd party packages configured via Xcode 11.
 
 ## Blog post for this example.
 
