@@ -113,6 +113,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18CEC72E238EBF9A00614366 /* Build configuration list for PBXNativeTarget "hms-seconds" */;
 			buildPhases = (
+				1893B86523903349008D2B35 /* SwiftLint */,
 				18CEC723238EBF9A00614366 /* Sources */,
 				18CEC724238EBF9A00614366 /* Frameworks */,
 				18CEC725238EBF9A00614366 /* CopyFiles */,
@@ -165,6 +166,27 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1893B86523903349008D2B35 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftlint\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18CEC723238EBF9A00614366 /* Sources */ = {

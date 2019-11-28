@@ -8,9 +8,7 @@
 
 import Foundation
 
-
-let ap = TSCArgumentParser()
-ap.crack()
+let argparser = TSCArgumentParser()
+argparser.crack()
 
 exit(EXIT_SUCCESS)
-

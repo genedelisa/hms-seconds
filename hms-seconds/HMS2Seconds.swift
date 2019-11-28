@@ -8,16 +8,18 @@
 
 import Foundation
 
+// swiftlint:disable identifier_name
+
 struct HMS2Seconds {
     var hms: String
     var isVerbose = false
-    
+
     func hmsToSeconds() -> Int {
-        
+
         if isVerbose {
             print("parsing hms input: \(hms)")
         }
-        
+
         let componentArray = hms.split(separator: ":")
         if componentArray.count != 3 {
             print("Error: \(hms) is invalid. Must have 3 components: hours, minutes, and seconds.")
@@ -29,11 +31,11 @@ struct HMS2Seconds {
                 print("Error \(hms) is invalid")
                 exit(EXIT_FAILURE)
         }
-        
+
         if isVerbose {
             print("h \(h) m \(m) s \(s)")
         }
-        
+
         let ms = m * 60
         let hs = h * 60 * 60
         let totalSeconds = s + ms  + hs

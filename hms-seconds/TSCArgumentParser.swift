@@ -15,35 +15,37 @@ import TSCBasic
 // the old name
 //import SPMUtility
 
+// swiftlint:disable identifier_name
+
 struct TSCArgumentParser {
-    
+
     // The first argument is always the executable, drop it
     let arguments = Array(ProcessInfo.processInfo.arguments.dropFirst())
     // let executable = ProcessInfo.processInfo.arguments.first!
     // let exe = CommandLine.arguments.first!
-    
+
     // commandName is the executable name complete with path.
     // do the lastcomponent cha cha if you want to use it here.
     // let parser = ArgumentParser(commandName: CommandLine.arguments.first!,
-    
+
     let parser = ArgumentParser(commandName: "hms-seconds",
                                 usage: "[options] H:M:S",
                                 overview: "Convert time in H:M:S format to seconds",
                                 seeAlso: "time")
-    // Mark: The arguments
+    // MARK: The arguments
     // var inputstring: OptionArgument<String>
     var verbose: OptionArgument<Bool>
-    
+
     var po: PositionalArgument<String>
-    
+
     init() {
-        
+
         po = parser.add(positional: "H:M:S input string",
                         kind: String.self,
                         optional: false,
                         usage: "e.g. 1:2:3 or 01:02:03",
                         completion: ShellCompletion.none)
-        
+
         // options are always optional
         //        inputstring = parser.add(option: "--hms",
         //                                 shortName: "-s",
@@ -51,13 +53,13 @@ struct TSCArgumentParser {
         //                                 //optional: false,
         //                                 usage: "The input h:m:s string",
         //                                 completion: ShellCompletion.none)
-        
+
         verbose  = parser.add(option: "--verbose",
                               shortName: "-v",
                               kind: Bool.self,
                               usage: "Be unduly prolix in the output")
     }
-    
+
     func processArguments(arguments: ArgumentParser.Result) {
         if let hms = arguments.get(po) {
             if let v = arguments.get(verbose) {
@@ -87,7 +89,7 @@ struct TSCArgumentParser {
         //            exit(EXIT_FAILURE)
         //        }
     }
-    
+
     func crack() {
         do {
             let parsedArguments = try parser.parse(arguments)
