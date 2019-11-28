@@ -36,7 +36,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1893B8562390298B008D2B35 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1893B8572390299A008D2B35 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1893B858239029A4008D2B35 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		1893B85923902BC7008D2B35 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		1893B85D23902BC8008D2B35 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
 		1893B85E23902BC8008D2B35 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1893B86023902D20008D2B35 /* HMS2Seconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMS2Seconds.swift; sourceTree = "<group>"; };
+		1893B86423903060008D2B35 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18CEC727238EBF9A00614366 /* hms-seconds */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "hms-seconds"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CEC72A238EBF9A00614366 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		18CEC734238EC2B400614366 /* TSCArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSCArgumentParser.swift; sourceTree = "<group>"; };
@@ -73,7 +73,6 @@
 				1893B85C23902BC8008D2B35 /* .swiftlint.yml */,
 				1893B85923902BC7008D2B35 /* .travis.yml */,
 				1893B8572390299A008D2B35 /* LICENSE */,
-				1893B8562390298B008D2B35 /* README.md */,
 				1893B858239029A4008D2B35 /* CHANGELOG.md */,
 			);
 			name = "Other files";
@@ -82,6 +81,7 @@
 		18CEC71E238EBF9A00614366 = {
 			isa = PBXGroup;
 			children = (
+				1893B86423903060008D2B35 /* README.md */,
 				18CEC729238EBF9A00614366 /* hms-seconds */,
 				18CEC728238EBF9A00614366 /* Products */,
 			);

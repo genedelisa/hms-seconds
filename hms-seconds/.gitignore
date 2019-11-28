@@ -1,6 +1,10 @@
 # Created by https://www.gitignore.io
 
+### macOS ###
+# General
 .DS_Store
+.AppleDouble
+.LSOverride
 
 fastlane/report.xml
 testcoverage-reports/
