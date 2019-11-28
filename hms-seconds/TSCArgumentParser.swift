@@ -12,7 +12,6 @@ import TSCUtility
 import TSCBasic
 //import func TSCLibc.exit
 
-
 // the old name
 //import SPMUtility
 
@@ -72,8 +71,7 @@ struct TSCArgumentParser {
             }
         }
         // a non-optional positional argument will throw an Error if not specified
-        
-        
+        // so I'm not doing this:
         //        if let hms = arguments.get(inputstring) {
         //            if let v = arguments.get(verbose) {
         //                let frob = HMS2Seconds(hms: hms, isVerbose: v)
