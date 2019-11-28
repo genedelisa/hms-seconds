@@ -63,7 +63,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1893B85F23902CE2008D2B35 /* Supporting Files */ = {
+		1893B86223902EB2008D2B35 /* Other files */ = {
 			isa = PBXGroup;
 			children = (
 				1893B85E23902BC8008D2B35 /* .gitignore */,
@@ -76,14 +76,13 @@
 				1893B8562390298B008D2B35 /* README.md */,
 				1893B858239029A4008D2B35 /* CHANGELOG.md */,
 			);
-			path = "Supporting Files";
+			name = "Other files";
 			sourceTree = "<group>";
 		};
 		18CEC71E238EBF9A00614366 = {
 			isa = PBXGroup;
 			children = (
 				18CEC729238EBF9A00614366 /* hms-seconds */,
-				1893B85F23902CE2008D2B35 /* Supporting Files */,
 				18CEC728238EBF9A00614366 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +98,7 @@
 		18CEC729238EBF9A00614366 /* hms-seconds */ = {
 			isa = PBXGroup;
 			children = (
+				1893B86223902EB2008D2B35 /* Other files */,
 				18CEC72A238EBF9A00614366 /* main.swift */,
 				18CEC734238EC2B400614366 /* TSCArgumentParser.swift */,
 				1893B86023902D20008D2B35 /* HMS2Seconds.swift */,
