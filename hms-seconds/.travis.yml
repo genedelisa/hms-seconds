@@ -1,0 +1,14 @@
+
+osx_image: xcode11.2
+language: swift
+
+xcode_project: ../hms-seconds.xcodeproj # path to your xcodeproj folder
+xcode_scheme: hms-seconds
+xcode_destination: platform=macOS
+
+script:
+- xcodebuild build | xcpretty;
+
+# - xcodebuild -scheme hms-seconds -workspace hms-seconds.xcodeproj -sdk macOS build test
+
+# https://docs.travis-ci.com/user/reference/osx
